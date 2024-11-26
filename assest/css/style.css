@@ -470,7 +470,7 @@ button.white {
     height: 3.125rem;
     padding: 0 1.25em;
     font-size: 14px;
-    width: 40%;
+    width: 80%;
     border: 1px solid transparent;
     border-radius: 4px;
     outline: none;
@@ -564,6 +564,104 @@ footer .copyright {
 
 /* Start Media Query */
 
+
+
+   
+
+
+
+
+
+/* Shop Page start */
+
+#page-header {
+    background: url(../img/banner/b1.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px; 
+}
+#page-header h2,p{
+    color: #fff;
+}
+#pagination{
+    text-align: center;
+}
+#pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px ;
+    color: #fff;
+    border-radius: 4px ;
+    font-weight: 600;
+}
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Single Product Section start */
+#pro-details{
+    display: flex;
+    margin-top: 20px;
+}
+#pro-details .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+#pro-details .single-pro-details h4{
+    padding: 40px 0px 20px 0px ;
+}
+#pro-details .single-pro-details h2{
+    font-size: 26px;
+}
+#pro-details .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+#pro-details .single-pro-details select:focus{
+    outline: none;
+}
+#pro-details .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 15px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+#pro-details .single-pro-details input:focus{
+    outline: none;
+}
+#pro-details .single-pro-details button{
+    background: #088178;
+    color: #fff;
+}
+#pro-details .single-pro-details span{
+    line-height: 25px;
+}
+#pro-details .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+#product-1 h6{
+    font-style: 180px;
+    font-weight: lighter;
+    margin-top: 20px;
+}
+
 @media (max-width:799px) {
     .section-p1 {
         padding: 40px 40px;
@@ -598,7 +696,6 @@ footer .copyright {
         align-items: center;
 
     }
-
     #close {
         position: absolute;
         top: 30px;
@@ -670,10 +767,6 @@ footer .copyright {
         width: 70%;
     }
 }
-
-
-
-
 @media (max-width: 477px) {
     #header {
         padding: 10px 30px;
@@ -744,37 +837,27 @@ footer .copyright {
     #newsletter .form {
         width: 100%;
     }
-
-}
-
-/* Shop Page start */
-
-#page-header {
-    background: url(../img/banner/b1.jpg);
-    width: 100%;
-    height: 40vh;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+/* single product */
+    #pro-details {
+        display: flex;
     flex-direction: column;
-    padding: 14px; 
-}
-#page-header h2,p{
-    color: #fff;
-}
-#pagination{
-    text-align: center;
-}
-#pagination a{
-    text-decoration: none;
-    background-color: #088178;
-    padding: 15px 20px ;
-    color: #fff;
-    border-radius: 4px ;
-    font-weight: 600;
-}
-#pagination a i{
-    font-size: 16px;
-    font-weight: 600;
+    }
+    #pro-details .single-pro-image {
+        width: 100%;
+        margin-right: 50px;
+    }
+    #pro-details .single-pro-details {
+        width: 100%;
+    }
+    #pro-details .single-pro-details select {
+        margin: 10px;
+    }
+    #pro-details .single-pro-details input {
+        margin: 10px;
+    }
+    h1 {
+        font-size: 30px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
 }
